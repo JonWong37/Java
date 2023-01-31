@@ -21,7 +21,6 @@ public class UserService {
     UserRepository userRepository;
 
 
-    // TO-DO: Write register and login methods!
     public User register(User user, BindingResult result) {
         // setting a potential user and finding the email
         Optional<User> potentialUser = userRepository.findByEmail(user.getEmail());
